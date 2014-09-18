@@ -200,6 +200,7 @@ var elDrag = new dragUpdate(uiRefresh,
             function(){
                 setTimeout(function(){
                     $('.data-list')[0].appendChild($(newLi)[0]);
+                    console.log('组件支持上拉加载，下拉加载两个方向，这个dome，只配置了上拉加载方向');
                     uiRefresh.trigger('loaded')
                 },300)
         },staute,'bottomUpdate');
